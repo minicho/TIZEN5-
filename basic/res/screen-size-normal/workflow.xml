@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Workflow>
+    <Scene Form="IDF_MAINFORM" Id="TabScene1" Panel="calendar"/>
+    <Scene Form="IDF_MAINFORM" Id="TabScene2" Panel="chat"/>
+    <Scene Form="IDF_MAINFORM" Id="TabScene3" Panel="IDL_PANEL3"/>
+    <SceneTransition AnimationType="none" DestroyOption="keep" DirectionType="forward" HistoryOption="no" Id="IDSCNT_START" Method="" SourceId="" SourceResourceType="" TargetId="TabScene1"/>
+    <SceneTransition AnimationType="none" DestroyOption="keep" DirectionType="forward" HistoryOption="no" Id="IDSCNT_3" Method="OnActionPerformed" SourceId="TabScene1" SourceResourceType="IDF_MAINFORM" TargetId="TabScene3"/>
+    <SceneTransition AnimationType="none" DestroyOption="keep" DirectionType="forward" HistoryOption="no" Id="IDSCNT_1" Method="OnActionPerformed" SourceId="TabScene2" SourceResourceType="IDF_MAINFORM" TargetId="TabScene1"/>
+    <SceneTransition AnimationType="none" DestroyOption="keep" DirectionType="forward" HistoryOption="no" Id="IDSCNT_2" Method="OnActionPerformed" SourceId="TabScene3" SourceResourceType="IDF_MAINFORM" TargetId="TabScene2"/>
+    <!--UI Builder(Workflow Designer) only-->
+    <WorkflowDesigner>
+        <Position Name="TabScene1" X="209" Y="36"/>
+        <Position Name="TabScene2" X="408" Y="378"/>
+        <Position Name="TabScene3" X="10" Y="380"/>
+    </WorkflowDesigner>
+</Workflow>
